@@ -1,47 +1,52 @@
+:root {
+    /* Fonts */
+    --main-font: "Roboto";
+    /*Text color */
+    --main-txt-cl: #212121;
+    --light-txt-cl:
+
+    /*Backround colors*/
+    --accent-bg-cl:
+}
+
 /* Селектор тега */
 body {
     background: #F5F5F5;
-  }
-  .menu-nav a {
-
-  }
-  .page-header {
-        position: absolute;
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-
-    background: #FFFFFF;
-  }
-
-  /* WebStudio */
-
-.logo-text {
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
-}
-
-/* Студія */
-
-.studia {
-    position: absolute;
-    width: 45px;
-    height: 16px;
-    left: 453px;
-    top: 32px;
+    font-family: var(--main-font);
     
-    font-family: 'Roboto';
+  }
+  .page-header .link {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16/14);
     letter-spacing: 0.02em;
+    color:var(--main-txt-cl) ;
+    text-decoration: none;
+  }
+  .logo-link {
+    color:#2196F3;;
     
+  }
+  .logo-header {
+    color: var(--main-txt-cl);
+
+  }
+  .link-studia {
     color: #2196F3;
-}
+    text-decoration: none;
+  }
+  .list-1 {
+    position: absolute;
+    width: 281px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+
+  }
+  
+
+  /* WebStudio */
+
 
 
