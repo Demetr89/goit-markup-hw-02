@@ -8,12 +8,13 @@
     --light-txt-cl: #F5F5F5;
 
     /*Backround colors*/
-    --accent-bg-cl:
+    
+   
 }
 
 /* Селектор тега */`    `
 body {
-    background: #F5F5F5;
+    background:#F5F5F5; ;
     font-family: var(--main-font);
     
   }
@@ -126,6 +127,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
+    letter-spacing: 0.03em;
 }
  .feature {
     list-style-type: none;
@@ -175,6 +177,47 @@ body {
   .adress:focus {
     color: rgb(0, 255, 106);
  }
+ .proect {
+    list-style-type: none;
+    font-family: var(--main-font);
+ }
 
+.descr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+ .filtrs {
+    list-style-type: none;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    
+    
+    
+}
 
+.button{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #2196F3;
+    
+    
+}
+ .button:hover , 
+ .button:focus {
+ color: #757575;
+ }
 
