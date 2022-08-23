@@ -1,11 +1,13 @@
 :root {
-    /* Fonts */
-    --main-font: 'Roboto', 'Raleway' , sans-serif;
-
-    /*Text color */
-
+    --main-font: 'Roboto',sans-serif;
+    --brand-color-left:#2196F3;
+    --brand-color-right:#000000;
+    --brand-color-fut:#FFFFFF;
+    --contacts-color:#757575;
     --main-txt-cl: #212121;
     --light-txt-cl: #F5F5F5;
+    --team-color-content:#F5F4FA;
+    --hero-footer-color:#2F303A;;
 
     /*Backround colors*/
     
@@ -21,22 +23,22 @@
     
   }
  .hero {
-    background: #2F303A;
+    background: var(--hero-footer-color);
     
     
   }
 
  .page-header {
-    background: #FFFFFF
+    background:var(--brand-color-fut);
   }
   .logo-link {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: calc(31/26);
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--brand-color-left);
     text-decoration: none;
     
     
@@ -79,22 +81,20 @@
   }
   .page-header .link:hover ,
   .page-header .link:focus {
-    color:#2196F3;
+    color:var(--brand-color-left);
   }
   .logo-link:hover
   .logo-link:focus {
-    color:#2196F3;
+    color:var(--brand-color-left);
   }
     
-  
   .link-studia.current ,
   .link.portfolio.current {
-    color: #2196F3;
+    color:var(--brand-color-left);
     
   }
   .logo-header {
     color: var(--main-txt-cl);
-   
 
   }
   .link-studia {
@@ -117,20 +117,14 @@
   .list-2 .link {
     justify-content: space-between;
     text-decoration: none;
-    color: #757575; 
+    color: var(--contacts-color); 
   }
   .list-2 {
     list-style-type: none;
   }
 
   .btn {    
-    width: 216px;
-    height: 50px;
-    left: 692px;
-    top: 430px;
-
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background: var(--brand-color-left);
     border-radius: 4px;
     cursor: pointer;
     font-family: var(--main-font);
@@ -138,7 +132,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: calc(30/16);
  }
  .btn:hover ,
  .btn:focus {
@@ -157,7 +151,7 @@
  .description {
 
     font-family: var(--main-font);
-    color: #757575;
+    color: var(--contacts-color);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -177,7 +171,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: #212121;
+    color: var(--brand-color-right);
 
  }
  .list-duty {
@@ -193,19 +187,19 @@
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: calc(42/36);
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: var(--brand-color-right);
  }
  .footer .link {
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24/36);
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--brand-color-fut);
     text-decoration: none;
     list-style-type: none;
     
@@ -215,10 +209,10 @@
  } 
   .footer .link:hover ,
   .footer .link:focus{
-    color: #2196F3;
+    color: var(--brand-color-left);
  }
  .footer {
-    background: #2F303A;
+    background:var(--hero-footer-color);
  }
  .logo-footer {
     color: var(--light-txt-cl);
@@ -238,9 +232,9 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: calc(19/16);
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--contacts-color);
  }
  .filtrs {
     list-style-type: none;
@@ -253,8 +247,8 @@
  }
  .filtrs .button:hover ,
  .filtrs .button:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--brand-color-fut);
+    background-color: var(--brand-color-left);
  }
 
  .button{
@@ -264,16 +258,16 @@
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.03em;
-    color: #212121;
-    background:#F5F4FA;;
+    color: var(--brand-color-right);
+    background:var(--team-color-content);
     
  }
  .button:hover , 
  .button:focus {
-    color: #2196F3;
+    color: var(--brand-color-left);
  }
  .section-team {
-    background: #F5F4FA
+    background: var(--team-color-content);
  }
  .team-name {
     font-family: var(--main-font);
@@ -282,5 +276,5 @@
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--main-txt-cl);
  }
