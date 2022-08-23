@@ -13,8 +13,11 @@
 
     /* Селектор тега */
  body {
-    background:#F5F5F5; ;
-    font-family: var(--main-font);
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color)
     
   }
  .hero {
@@ -34,9 +37,11 @@
     line-height: 31px;
     letter-spacing: 0.03em;
     color: #2196F3;
+    text-decoration: none;
+    
     
   }
-  .title {
+  .hero .title {
     color:var(--light-txt-cl);
     font-family: var(--main-font);
     font-style: normal;
@@ -46,6 +51,19 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px; 
   }
   .page-header .link {
     font-family: var(--main-font);
@@ -57,12 +75,16 @@
     color:var(--main-txt-cl) ;
     text-decoration: none;
     
+    
   }
   .page-header .link:hover ,
   .page-header .link:focus {
-    color: rgb(0, 255, 106);
+    color:#2196F3;
   }
-  
+  .logo-link:hover
+  .logo-link:focus {
+    color:#2196F3;
+  }
     
   
   .link-studia.current ,
@@ -72,6 +94,7 @@
   }
   .logo-header {
     color: var(--main-txt-cl);
+   
 
   }
   .link-studia {
@@ -85,26 +108,22 @@
     color: var(--main-txt-cl);
     text-decoration: none;
   }
+
   .list-1 {
     list-style-type: none;
 
   }
-  .list-2{
-    list-style-type: none;
+  
+  .list-2 .link {
     justify-content: space-between;
-  }
-  .link-mail {
-    color: #2196F3;
     text-decoration: none;
-    
+    color: #757575; 
   }
-  .link-mail:hover, 
-  .link-mail:focus {
-    color: orangered;
+  .list-2 {
+    list-style-type: none;
+  }
 
-  }
-  .btn {
-    position: absolute;    
+  .btn {    
     width: 216px;
     height: 50px;
     left: 692px;
@@ -120,10 +139,11 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-
-
  }
-
+ .btn:hover ,
+ .btn:focus {
+  
+ }
  .propriet {
     list-style-type: none;
     
@@ -131,6 +151,7 @@
  .propriet .feature {
     color: var(--main-txt-cl);
     font-family: var(--main-font);
+    
     
  }
  .description {
@@ -147,6 +168,17 @@
  .feature {
     list-style-type: none;
     
+    
+ }
+ .propriet .title {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #212121;
+
  }
  .list-duty {
     list-style-type: none;
@@ -158,25 +190,32 @@
  }
  .section-title {
     font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+
+    color: #212121;
  }
  .footer .link {
     font-family: var(--main-font);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.02em;
-    
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
     text-decoration: none;
     list-style-type: none;
-    color: rgba(255, 255, 255, 0.6);
+    
  } 
  .footer .list-item {
     list-style-type: none;
  } 
   .footer .link:hover ,
   .footer .link:focus{
-    color: #f10f0f;
+    color: #2196F3;
  }
  .footer {
     background: #2F303A;
@@ -185,13 +224,11 @@
     color: var(--light-txt-cl);
     
  }
-  .adress {
+  .link .adress {
     color:var(--light-txt-cl);
  }
-  .adress:hover ,
-  .adress:focus {
-    color: rgb(0, 255, 106);
- }
+ 
+
  .proect {
     list-style-type: none;
     font-family: var(--main-font);
@@ -213,10 +250,11 @@
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.03em;
-    color: #212121;
-    
-    
-    
+ }
+ .filtrs .button:hover ,
+ .filtrs .button:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
  }
 
  .button{
@@ -227,10 +265,21 @@
     line-height: 26px;
     letter-spacing: 0.03em;
     color: #212121;
-    background: #2196F3; 
+    
  }
  .button:hover , 
  .button:focus {
-    color: #757575;
+    color: #2196F3;
  }
-
+ .section-team {
+    background: #F5F4FA
+ }
+ .team-name {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #212121;
+ }
