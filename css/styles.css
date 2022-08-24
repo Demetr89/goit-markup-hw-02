@@ -4,6 +4,7 @@
     --brand-color-right:#000000;
     --brand-color-fut:#FFFFFF;
     --contacts-color:#757575;
+    --contacts-color-footer: rgba(255, 255, 255, 0.6);
     --main-txt-cl: #212121;
     --light-txt-cl: #F5F5F5;
     --team-color-content:#F5F4FA;
@@ -17,6 +18,7 @@
  body {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
+    font-style: normal;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
     background-color: var(--brand-color-fut)
@@ -33,7 +35,6 @@
   }
   .logo-link {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31/26);
@@ -46,7 +47,6 @@
   .hero .title {
     color:var(--light-txt-cl);
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -100,7 +100,6 @@
   .link-studia {
     text-decoration: none;
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16/14);
@@ -184,7 +183,7 @@
  }
  .section-title {
     font-family: var(--main-font);
-    font-style: normal;
+   
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
@@ -223,15 +222,12 @@
  }
  .contacts-addres .contacts {
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-/* or 171% */
-
-letter-spacing: 0.03em;
-
-color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--contacts-color-footer);
 
  }
 
