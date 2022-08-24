@@ -88,7 +88,7 @@
     color:var(--brand-color-left);
   }
     
-  .link-studia.current ,
+  .link.studia.current ,
   .link.portfolio.current {
     color:var(--brand-color-left);
     
@@ -135,7 +135,7 @@
  }
  .btn:hover ,
  .btn:focus {
-  
+    background: var(--brand-color-left);
  }
  .propriet {
     list-style-type: none;
@@ -276,6 +276,9 @@
  }
  .section-team {
     background: var(--team-color-content);
+ }
+ .section-team .list-item {
+    background-color: var(--brand-color-fut);
  }
  .team-name {
     font-family: var(--main-font);
