@@ -197,7 +197,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: calc(24/36);
+    line-height: calc(24/14);
     letter-spacing: 0.03em;
     color: var(--brand-color-fut);
     text-decoration: none;
@@ -221,7 +221,19 @@
   .link .adress {
     color:var(--light-txt-cl);
  }
- 
+ .contacts-addres .contacts {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
+
+ }
 
  .proect {
     list-style-type: none;
