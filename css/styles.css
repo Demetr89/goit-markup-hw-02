@@ -135,7 +135,7 @@
  }
  .btn:hover ,
  .btn:focus {
-    background: var(--brand-color-left);
+    background: var(--contacts-color);
  }
  .propriet {
     list-style-type: none;
