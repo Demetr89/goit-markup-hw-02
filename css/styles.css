@@ -135,7 +135,7 @@
  }
  .btn:hover ,
  .btn:focus {
-    background: var(--contacts-color);
+    background: #188CE8;
  }
  .propriet {
     list-style-type: none;
@@ -155,7 +155,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
-    letter-spacing: 0.03em;
  }
 
  .feature {
@@ -167,7 +166,6 @@
     font-family: var(--main-font);
     font-style: normal;
     font-size: 14px;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color: var(--brand-color-right);
@@ -183,11 +181,10 @@
  }
  .section-title {
     font-family: var(--main-font);
-   
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
-    letter-spacing: 0.03em;
+    
 
     color: var(--brand-color-right);
  }
@@ -197,7 +194,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
-    letter-spacing: 0.03em;
     color: var(--brand-color-fut);
     text-decoration: none;
     list-style-type: none;
@@ -230,6 +226,10 @@
     color: var(--contacts-color-footer);
 
  }
+ .contacts:hover ,
+ .contacts:focus {
+    color: var(--brand-color-left);
+ }
 
  .proect {
     list-style-type: none;
@@ -250,7 +250,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: calc(26/16);
     letter-spacing: 0.03em;
  }
  .filtrs .button:hover ,
@@ -264,10 +264,11 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: calc(26/16);
     letter-spacing: 0.03em;
     color: var(--brand-color-right);
     background:var(--team-color-content);
+    cursor: pointer;
     
  }
  .button:hover , 
